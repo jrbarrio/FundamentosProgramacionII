@@ -1,0 +1,34 @@
+/****************************************************************************
+
+
+koldo.rc
+
+produced by Borland Resource Workshop
+
+
+*****************************************************************************/
+#include <owl/inputdia.rc>
+#include <owl/except.rc>
+
+#include "koldo.rh"
+
+#ifdef RC_INVOKED 
+#ifndef WORKSHOP_INVOKED
+# include <windows.h>
+#endif
+
+MENU_1 MENU 
+{
+ POPUP "&Fichero"
+ {
+  MENUITEM "&Salir", CM_SALIR
+ }
+
+ POPUP "&Editar"
+ {
+  MENUITEM "&Insertar Texto", CM_INSERTAR
+  MENUITEM "&Borrar Texto", CM_BORRAR
+ }
+
+}
+#endif  // RC_INVOKED

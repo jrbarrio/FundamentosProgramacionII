@@ -1,0 +1,27 @@
+//----------------------------------------------------------------------------
+// ObjectWindows - (C) Copyright 1991, 1994 by Borland International
+//   Tutorial application -- step01.cpp
+//----------------------------------------------------------------------------
+#include <owl/owlpch.h>
+#include <owl/applicat.h>
+#include <owl/framewin.h>
+			 // lo cambio por no ser propio de la librería de clases  ( TDrawApp == Dibuja
+class Dibuja : public TApplication {
+  public:
+	 Dibuja() : TApplication() {}
+
+	 void InitMainWindow()    // para intr nombre o titulo a ventana que he creado
+	 {                    // redeclaración InitMainWindow
+		TFrameWindow * p_tfr_win;
+		p_tfr_win = new TFrameWindow (0, "Viva Zapata");
+		SetMainWindow(p_tfr_win);
+	 }                   // puntero a clase TFrameWindow con llamada a constructor especifico al que le paso dos parámetroa
+};
+
+int
+OwlMain(int /*argc*/, char* /*argv*/ [])
+{
+  Dibuja dibujo;   // declaración de un objeto de la clase Dibuja
+
+  return dibujo.Run();
+}
