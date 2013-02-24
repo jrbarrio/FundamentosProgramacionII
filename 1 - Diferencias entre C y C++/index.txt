@@ -1,0 +1,5 @@
+1 - Diferencias entre C y C++
+  + Comentarios
+  + Definición de constantes
+  + Transferencia de información entre funciones
+  + Sobrecarga de funciones

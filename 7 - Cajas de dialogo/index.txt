@@ -1,0 +1,5 @@
+7 - Cajas de diálogo
+  + Introducción
+  + Diseño de cajas de diálogo
+  + Tipos de cajas de diálogo
+  + Transparencia de información
